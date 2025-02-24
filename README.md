@@ -1,4 +1,4 @@
-Guess A Number
+Guess a number
 
 ## À propos
 
