@@ -11,8 +11,6 @@ Ce projet met en avant la manipulation du DOM avec JavaScript.
 
 État du projet : Terminé 
 
-Nombre de participants : 1 
-
 Technologies : JavaScript, HTML, CSS
 
 IDE : VSCode
