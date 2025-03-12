@@ -8,20 +8,18 @@ startButton.addEventListener("click", function () {
     if (alertIsOn !== null) alertIsOn.remove();
     let newElmAlert = document.createElement("p");
     newElmAlert.setAttribute("id", "alert-message");
-    newElmAlert.textContent = "Choose a valid number !";
+    newElmAlert.textContent = "Choose a valid number!";
     newElmAlert.style.color = "red";
-    newElmAlert.style.alignSelf = "center";
-    newElmAlert.style.textTransform = "uppercase";
     mainContainer.appendChild(newElmAlert);
   } else {
     let alertIsOn = document.querySelector("#alert-message");
     if (alertIsOn !== null) alertIsOn.remove();
     player1Container.style.display = "none";
-    player2Container.style.display = "flex";
+    player2Container.style.display = "block";
   }
 });
 
-tryButton.addEventListener("click", function () {
+guessButton.addEventListener("click", function () {
   let valuePlayer2 = parseInt(player2.value);
   console.log("🥈", valuePlayer2);
   if (valuePlayer2 < 1 || valuePlayer2 > 50 || isNaN(valuePlayer2)) {
@@ -29,10 +27,8 @@ tryButton.addEventListener("click", function () {
     if (alertIsOn !== null) alertIsOn.remove();
     let newElmAlert = document.createElement("p");
     newElmAlert.setAttribute("id", "alert-message");
-    newElmAlert.textContent = "Choose a valid number !";
+    newElmAlert.textContent = "Choose a valid number!";
     newElmAlert.style.color = "red";
-    newElmAlert.style.alignSelf = "center";
-    newElmAlert.style.textTransform = "uppercase";
     mainContainer.appendChild(newElmAlert);
   } else {
     let alertIsOn = document.querySelector("#alert-message");
@@ -40,7 +36,6 @@ tryButton.addEventListener("click", function () {
     matchNumber(valuePlayer1, valuePlayer2);
   }
 });
-
 
 // Note : Un paramètre Javascript ne fait que stocker la valeur qui lui est passée au moment de l'appel d'une fonction. Il ne garde pas d'information au-delà de cette exécution, à moins qu'il ne stocke cette valeur ailleurs, par exemple dans une variable globale, un objet, ou une base de données.
 

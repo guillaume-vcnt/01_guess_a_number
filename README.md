@@ -1,4 +1,4 @@
-02_guess_a_number
+# Guess a number
 
 ## À propos 
 Cet exercice individuel a pour but de faire un petit jeu interactif où deux joueurs peuvent s'affronter. 
