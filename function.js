@@ -1,15 +1,15 @@
 function matchNumber(p1, p2) {
   console.log(typeof p1, typeof p2);
   if (p1 > p2) {
-    console.log("👹 Plus grand");
+    console.log("Plus grand");
     higherMessage();
     wrongNumber();
   } else if (p1 < p2) {
-    console.log("👹 Plus petit");
+    console.log("Plus petit");
     lowerMessage();
     wrongNumber();
   } else {
-    console.log("👹 Bien joué");
+    console.log("Bien joué");
     wellDoneMessage();
   }
 }
@@ -21,7 +21,7 @@ function wrongNumber() {
   }
 
   playerAttempt = playerAttempt + 1;
-  console.log(`"👻 " ${playerAttempt}`);
+  console.log(`${playerAttempt}`);
 
   let newElmAttempt = document.createElement("p");
   newElmAttempt.setAttribute("id", "attempt-message");
@@ -39,7 +39,6 @@ function wellDoneMessage() {
   let newElmWellDone = document.createElement("p");
   newElmWellDone.setAttribute("id", "welldone-message");
   newElmWellDone.textContent = "Well done!";
-  newElmWellDone.style.color = "green";
   mainContainer.appendChild(newElmWellDone);
   player2Container.style.display = "none";
   let newElmRestartGame = document.createElement("button");
@@ -55,7 +54,7 @@ function higherMessage() {
   let higherIsOn = document.querySelector("#higher-message");
   if (higherIsOn !== null) {
     higherIsOn.remove();
-    console.log("👽", higherIsOn);
+    console.log(higherIsOn);
   }
   let newElmhigher = document.createElement("p");
   newElmhigher.setAttribute("id", "higher-message");
@@ -69,7 +68,7 @@ function lowerMessage() {
   let lowerIsOn = document.querySelector("#lower-message");
   if (lowerIsOn !== null) {
     lowerIsOn.remove();
-    console.log("👽", lowerIsOn);
+    console.log(lowerIsOn);
   }
   let newElmlower = document.createElement("p");
   newElmlower.setAttribute("id", "lower-message");
