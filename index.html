@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess a Number</title>
+    <script src="global.js" defer></script>
+    <script src="function.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <h2>Guess a Number</h2>
+      <div id="player1-container">
+        <label id="label-player1" for="choose-number"
+          >Choose a number between 0 and 50
+        </label>
+        <br />
+        <br />
+        <input
+          type="number"
+          name="choose-number"
+          id="choose-number"
+          min="0"
+          max="50"
+          style="width: 100px"
+          placeholder="Player 1"
+          required
+        />
+        <button id="start-button" type="submit">START</button>
+      </div>
+      <div id="player2-container">
+        <label id="label-player2" for="guess-number"
+          >Choose a number between 0 and 50
+        </label>
+        <br />
+        <br />
+        <input
+          type="number"
+          name="guess-number"
+          id="guess-number"
+          min="0"
+          max="50"
+          style="width: 100px"
+          placeholder="Player 2"
+          required
+        />
+        <button id="guess-button" type="submit">START</button>
+      </div>
+    </div>
+  </body>
+</html>
